@@ -1,12 +1,17 @@
+![CircleCI Build Status](https://circleci.com/gh/kovalevvlad/chaos-csv.png?style=shield&circle-token=6c77497a4f2cb91cba03e55499353fe2069df573 "CircleCI Build Status")
+
 # Chaos CSV Writer - Writing CSVs Responsibly
 
 ### Motivation
-Have you ever had a production dependency on data delivered via a CSV? How many times did your production
-processes break because you were using a half-baked CSV reader which could not handle commas inside CSV data cells or
-escaped double quotes inside data cells or any other CSV gotcha (for more gotchas check
-[this article](https://tburette.github.io/blog/2014/05/25/so-you-want-to-write-your-own-CSV-code/))?
+Have you ever had a production dependency on data delivered via a CSV? How many times have your production
+processes broken because you were using a half-baked CSV reader which could not handle commas or
+escaped double quotes inside CSV data cells? *For more gotchas check
+[this article](https://tburette.github.io/blog/2014/05/25/so-you-want-to-write-your-own-CSV-code/).*
+
 Chaos CSV has been created to address this problem by generating valid CSV files which are unreadable with half-baked
-CSV readers. *Would you not be happy if all of the CSVs that your read were written with this approach?*
+CSV readers.
+
+*Would you not be happy if all of the CSVs that your read were written with this approach?*
 
 ### Assumptions
 It is assumed that you want to write CSV files *with* headers and all lines contain the same number of data cells.
