@@ -11,7 +11,9 @@ escaped double quotes inside CSV data cells? *For more gotchas check
 Chaos CSV has been created to address this problem by generating valid CSV files which are unreadable with half-baked
 CSV readers.
 
-*Would you not be happy if all of the CSVs that your read were written with this approach?*
+Would you not be happy if all of the CSVs that your read were written with this approach?
+
+*For those of you who think - "why would anyone parse a CSV themselves or use a crappy CSV reader?" - as of 2016-12-19, the most popular Scala CSV reader (at least according to Google search) - [totoshi/scala-csv](https://github.com/tototoshi/scala-csv/) cannot handle delimiters inside quotes ([issue](https://github.com/tototoshi/scala-csv/issues/91)).*
 
 ### Assumptions
 It is assumed that you want to write CSV files *with* headers and all lines contain the same number of data cells.
